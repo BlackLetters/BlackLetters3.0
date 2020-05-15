@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Contact Support";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to contact support.</p>
+<form method="post" action="contact.php">
+    <label for="name">Name:</label>
+    <input type="text" class="text" name="cf_name" id="name" />
+    <label for="email">email:</label>
+    <input type="text" class="text" name="cf_email" id="email" />
+    <label for="text">Message:</label>
+    <textarea class="text" name="cf_message" id="message"></textarea>
+    <input type="submit" class="submit" value="Send" />
+</form>
